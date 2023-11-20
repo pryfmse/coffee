@@ -9,7 +9,7 @@ class MyWidget(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('main.ui', self)  # Загружаем дизайнv
-        con = sqlite3.connect('coffee.txt')
+        con = sqlite3.connect('coffee.sqlite')
         self.cur = con.cursor()
         self.data = self.cur.execute('''SELECT * FROM кофе''').fetchall()
         for i, row in enumerate(self.data):
