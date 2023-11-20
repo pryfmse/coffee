@@ -30,7 +30,7 @@
     </column>
     <column>
      <property name="text">
-      <string>New Column</string>
+      <string>Название</string>
      </property>
     </column>
     <column>
